@@ -1,0 +1,10 @@
+PROJECT_CONFIGURATION:
+    verbose: true
+    crawler_name: crawler_bit
+
+SEEDS_CONFIGURATION:
+    file_name: seeds.txt
+
+DATABASE_CONFIGURATION:
+    type: sqlite
+    name: crawlerBit.db

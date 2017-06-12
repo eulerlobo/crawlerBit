@@ -3,9 +3,10 @@ import datetime
 
 from service.seeds import seeds
 from scrapy.linkextractors import LinkExtractor
+from crawlerBitConfiguration import crawlerBitConfiguration
 
 class CrawlerBit(scrapy.Spider):
-    name = "crawler_bit"
+    name = crawlerBitConfiguration.getCrawlerName()
     start_urls = seeds.getSeeds()
 
     def parse(self, response):

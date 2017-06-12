@@ -1,5 +1,7 @@
 import os.path
 
+from crawlerBitConfiguration import crawlerBitConfiguration
+
 class seeds():
 
     SEEDS_FILE = "seeds.txt"
@@ -7,8 +9,8 @@ class seeds():
 
     @staticmethod
     def __getFileSeeds():
-        with open(os.path.dirname(__file__) + "/../" + seeds.SEEDS_FILE, seeds.READ_MODE) as file:
-            return file.read().splitlines()
+        with open(os.path.dirname(__file__) + "/../" + crawlerBitConfiguration.getSeedsFileName(), seeds.READ_MODE) as file:
+           return file.read().splitlines()
 
     @staticmethod
     def getSeeds():
