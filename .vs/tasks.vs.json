@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-HelloWorld",
+      "appliesTo": "HelloWorld.sln",
+      "type": "command"
+    },
+    {
+      "taskName": "task-HelloWorld",
+      "appliesTo": "HelloWorld.py",
+      "type": "command"
+    }
+  ]
+}
