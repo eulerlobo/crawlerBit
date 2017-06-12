@@ -1,20 +1,29 @@
 import scrapy
-import datetime
 
+from datetime import datetime
 from service.seeds import seeds
 from scrapy.linkextractors import LinkExtractor
 from crawlerBitConfiguration import crawlerBitConfiguration
 
 class CrawlerBit(scrapy.Spider):
+
+    TIME_FORMAT = "%Y-%m-%d %H:%M:%S"
+
     name = crawlerBitConfiguration.getCrawlerName()
     start_urls = seeds.getSeeds()
 
     def parse(self, response):
+        url = response.url,
+        title = response.xpath("//title/text()").extract_first()
+        time  = datetime.now().strftime(CrawlerBit.TIME_FORMAT)
+        content = response.xpath("//body").extract(),
+
+        #TODO: Save elements in database
 
         yield {
-            'url': response.url,
-            'content': response.xpath("//body").extract(),
-            'time': datetime.datetime.now()
+            "url": response.url,
+            "title":  response.xpath("//title/text()").extract_first(),
+            "time": datetime.now().strftime(CrawlerBit.TIME_FORMAT)
         }
 
         extractor = LinkExtractor()
