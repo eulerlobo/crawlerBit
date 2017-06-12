@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\.vs\\config",
-    "\\.vs\\HelloWorld",
-    "\\service"
+    ""
   ],
-  "SelectedNode": "\\seeds.txt",
+  "SelectedNode": "\\setup.py",
   "PreviewInSolutionExplorer": false
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "HelloWorld", "HelloWorld.pyproj", "{63A5C280-37DC-442E-AF7C-38481865C631}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CrawlerBit", "CrawlerBit.pyproj", "{63A5C280-37DC-442E-AF7C-38481865C631}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
